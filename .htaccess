@@ -1,6 +1,7 @@
 RewriteEngine On
+RewriteBase /
 
-# إذا لم يكن ملف أو مجلد موجود، توجيه إلى index.php
+# إذا الملف أو المجلد غير موجود، حول الطلب إلى index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^(.*)$ index.php?path=$1 [L,QSA]
