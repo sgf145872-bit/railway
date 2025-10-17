@@ -15,7 +15,7 @@ if (file_exists($file)) {
     include $file;
 } else {
 
-    include .'404.php';
+    include '404.php';
     /*
     // إذا الملف غير موجود
     http_response_code(404);
