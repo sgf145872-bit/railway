@@ -1,7 +1,6 @@
 RewriteEngine On
-RewriteBase /
 
-# إذا الملف أو المجلد غير موجود، حول الطلب إلى index.php
+# اجعل كل الطلبات تذهب إلى index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?path=$1 [L,QSA]
