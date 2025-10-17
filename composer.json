@@ -1,0 +1,8 @@
+{
+    "name": "my-php-app/task-manager",
+    "description": "تطبيق عربي بسيط لإدارة المهام",
+    "type": "project",
+    "require": {
+        "php": "^8.0"
+    }
+}
